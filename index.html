@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<link rel="stylesheet" href="static/css/style.css">
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p style="background-color:white">Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <p style="color:whitesmoke;font-size:20px;">
+        In this project, researchers are searching for bacteria that can synthesize proteins that taste like beef. Since human body is the source of thousands of types of bacteria, researchers believe that ideal bacterial species to make synthetic beef is found in human belly button. 
+        A sample is taken from navels of people across the country to identify bacterial species that is present in human belly.<br>
+        
+      </p>
+      </div> 
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+        <p style="color:whitesmoke;">
+          Top ten bacterial species found in selected test subject
+        </p>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+        <p style="color:whitesmoke;">
+          Weekly washing frequency of belly button by selected test subject is displayed as a measure from 0-10
+        </p>
+      </div> 
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+        <p style="color:whitesmoke;">
+          Bubble chart displays the bacteria cultures per sample based on sample value 
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
+
+</body>
+
+</html>
