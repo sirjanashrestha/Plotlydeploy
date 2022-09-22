@@ -18,6 +18,9 @@ Tools used: VS Code, Web Browser, Command Line Interface, Github, HTML
 - How to use interactivity to enhance your visualizations.
 - Deploy an interactive chart to GitHub Pages
 
+Source: [a link](https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed/objects-classes)
+
+
 ## Result
 
 ### Belly button demographic panel
