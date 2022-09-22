@@ -28,12 +28,12 @@ When a test subject ID no. option is selected, demographic panel displays the re
 ### A horizontal bar chart that displays top 10 bacterial species
 <img width="506" alt="Screen Shot 2022-09-22 at 8 40 34 AM" src="https://user-images.githubusercontent.com/107566776/191750066-dc76cbe1-ba9f-42d2-8a85-53a60b2e1020.png">
 
-- Horizontal bar chart components are
+- Horizontal bar chart components are;
 1. The y values are the otu_ids in descending order
 2. The x values are the sample_values in descending order
 3. The hover text is the otu_labels in descending order.
 
-- W, and the bar chart has the following:
+- Bar chart summarizes the following result;
 1. The top 10 sample_values are sorted in descending order
 2. The top 10 sample_values as values
 3. The otu_ids as the labels
